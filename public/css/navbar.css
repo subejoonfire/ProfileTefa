@@ -1,0 +1,51 @@
+.logo-container {
+  padding: 10px;
+  width: 50px;
+}
+.logo-container span {
+  color: white;
+}
+.links-container {
+  display: flex;
+  width: 350px;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.links-container a {
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  color: white;
+  text-decoration: none;
+}
+.navbar-container {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  height: 60px;
+  justify-content: space-around;
+  text-align: center;
+  transition: background-color 0.2s ease;
+  z-index: 3;
+}
+.navbar-container.scrolled {
+  background-color: white;
+}
+.navbar-container.scrolled a,
+.navbar-container.scrolled .logo-container img {
+  color: #072e64;
+}
+@media screen and (max-width: 768px) {
+  .links-container {
+    transform: translateX(-20px);
+  }
+  .logo-container {
+    transform: translateX(-30px);
+  }
+  .links-container a {
+    font-size: 12px;
+  }
+  #logo, #logoScrolled{
+    width: 35px;
+  }
+}

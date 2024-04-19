@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  font-family: "Candara", sans-serif;
+  overflow-x: hidden;
+}
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 70%;
+  margin: 50px auto;
+  border-radius: 10px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.contactus-container {
+  padding: 20px;
+}
+
+.contactus-container span {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.nama-container,
+.subjek-container,
+.telepon-container,
+.pesan-container {
+  margin-bottom: 15px;
+}
+
+select,
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.submit-button {
+  text-align: right;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #072e64; /* Green color for the button */
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0062ec; /* Darker green for button hover */
+}

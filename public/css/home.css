@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  font-family: "Candara", sans-serif;
+  overflow-x: hidden;
+}
+.container {
+  height: 100% auto;
+  display: flex;
+  flex-direction: column;
+}
+.slogans-container {
+  width: 100%;
+  height: 500px;
+  background-color: white;
+  text-align: center;
+  padding: 20px;
+  padding-top: 70px;
+  background-color: #072e64;
+}
+.slogans-header h1 {
+  font-size: 35px;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 0.03em;
+  color: white;
+}
+.slogans-header {
+  margin-bottom: 30px;
+}
+.slogans-body {
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+}
+.slogans-card {
+  width: 450px;
+  height: 300px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.slogans-description-container {
+  margin-top: 30px;
+  width: 500px;
+  justify-content: flex-start;
+  text-align: left;
+}
+.slogans-description-container p {
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  font-weight: 100;
+}
+.clients-container {
+  width: 100%;
+  height: 300px auto;
+  background-color: white;
+  text-align: center;
+  padding: 20px;
+  padding-top: 70px;
+  background-color: white;
+}
+.clients-container .clients-header h1 {
+  font-size: 35px;
+  font-family: "Ubuntu", sans-serif;
+  letter-spacing: 0.03em;
+  color: #072e64;
+}
+.clients-body {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+}
+.clients-card-header {
+  width: 100% auto;
+  height: 70%;
+}
+.clients-card-body {
+  width: 100% auto;
+  height: 30%;
+}
+.clients-logo-container {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.clients-logo-container img {
+  height: auto;
+  object-fit: contain;
+}
+.services-image-container {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+.services-image-container img {
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}
+.services-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+.services-container {
+  position: absolute;
+  width: 100%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  flex-direction: column;
+}
+.services-container .card-header h1 {
+  color: white;
+}
+.services-container .card-container {
+  background-color: rgba(105, 105, 105, 0.5);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+}
+.services-container .card-container h1,
+.services-container .card-container p {
+  color: white;
+}
+.services-container .card-container p {
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-top: 5px;
+}
+@media screen and (max-width: 768px) {
+  div {
+    overflow: hidden;
+  }
+  .slogans-description-container {
+    transform: translateX(-20px);
+  }
+  .slogans-card {
+    display: none;
+  }
+  .services-container {
+    height: 70%;
+    justify-content: center;
+  }
+  .services-image-container {
+    height: 500px;
+    position: relative;
+  }
+  .services-image-container img {
+    height: 100%;
+    object-fit: cover;
+  }
+  .services-overlay {
+    position: absolute;
+  }
+  .services-container .card-container {
+    width: 200px;
+  }
+  .services-container .card-container .card-header {
+    width: 100%;
+  }
+  .services-container .card-container .card-header h1 {
+    font-size: 25px;
+  }
+  .clients-container {
+    transform: translateY(-30px);
+  }
+  .clients-logo-container {
+    width: 80%;
+  }
+  .clients-container .clients-header h1 {
+    font-size: 25px;
+    margin-left: -30px;
+  }
+  .clients-body {
+    padding: 0;
+  }
+  .clients-logo-container img {
+    padding: 5px;
+  }
+}

@@ -1,0 +1,19 @@
+CRITICAL - 2024-04-18 06:07:16 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "services.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('services.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('services', [], true)
+ 3 APPPATH\Controllers\Routes.php(20): view('services')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Routes->services()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Routes))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-18 20:01:09 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "services.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('services.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('services', [], true)
+ 3 APPPATH\Controllers\Routes.php(20): view('services')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Routes->services()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Routes))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\profile-tefa\\public\\index.php')

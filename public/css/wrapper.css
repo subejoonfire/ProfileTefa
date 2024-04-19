@@ -1,0 +1,95 @@
+.title-container {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 500px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+.title-container h1 {
+  color: white;
+  font-size: 70px;
+}
+.left-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 200px;
+  justify-content: space-around;
+}
+.gallery {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto; /* Ubah dari 100% menjadi auto */
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 0;
+  opacity: 0;
+  transform: translateY(-30%);
+  transition: opacity 0.5s ease;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.slide.active {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+.images-link {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 95%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+.wrapper .images-link a {
+  color: white;
+  font-size: 100px;
+  text-decoration: none;
+  cursor: pointer;
+  user-select: none;
+  z-index: 2;
+}
+.wrapper {
+  height: 500px;
+}
+.wrapper .overlay {
+  height: 500px;
+}
+@media screen and (max-width: 768px) {
+  .wrapper {
+    height: 460px;
+  }
+  .wrapper .overlay {
+    height: 460px;
+  }
+  .slide {
+    transform: translate(-27%, -25%);
+    width: 1000px;
+    height: 100vh;
+  }
+  .title-container h1 {
+    font-size: 40px;
+  }
+}
