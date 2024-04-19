@@ -4,7 +4,7 @@
     <script src="<?= base_url('/js/navbar.js') ?>"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TEFA - Beranda</title>
     <link rel="stylesheet" href="<?= base_url('/css/wrapper.css') ?>">
     <link rel="stylesheet" href="<?= base_url('/css/home.css') ?>">
     <link rel="stylesheet" href="<?= base_url('/css/navbar.css') ?>">

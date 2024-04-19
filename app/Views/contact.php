@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="<?= base_url('/css/navbar.css') ?>">
     <link rel="stylesheet" href="<?= base_url('/css/contact.css') ?>">
     <link rel="stylesheet" href="<?= base_url('/css/contactus.css') ?>">
-    <title>Document</title>
+    <title>TEFA - Hubungi Kami</title>
 </head>
 
 <body>
